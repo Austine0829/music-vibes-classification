@@ -1,1 +1,3 @@
-# music-vibes-classification
+# Music Vibe Classification Model
+
+## Overview
