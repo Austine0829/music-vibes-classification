@@ -1,4 +1,3 @@
-xgboost==3.1.2
 tensorflow==2.20.0
 tensorflow-hub==0.16.1
 tqdm==4.67.1
@@ -7,4 +6,3 @@ pandas==2.3.3
 numpy==2.3.5
 notebook==7.5.1
 librosa==0.11.0
-matplot==0.1.9
