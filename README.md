@@ -11,9 +11,9 @@ The model predicts one of five vibe labels:
 | --------- | --------------------------------- |
 | Acoustic  | Acoustic                          |
 | Chaotic   | Rock, Metal                       |
-| Chill     | Hip-Hop, Reggae, R&B              |
+| Road Trip | Hip-Hop, Reggae, R&B              |
 | Energetic | Country, Disco, Pop               |
-| Relaxing  | Blues, Jazz                       |
+| Chill     | Blues, Jazz                       |
 ```
 
 ## Pipeline Flow
@@ -26,7 +26,7 @@ YAMNet Model (1024 Embeddings)
         ↓
 Music Vibe Neural Network Classifier
         ↓
-Vibe Prediction (Acoustic | Chaotic | Chill | Energetic | Relaxing)
+Vibe Prediction (Acoustic | Chaotic | Chill | Energetic | Road Trip)
         ↓
 Database Storage (Path + Song metadata + predicted vibe label)
         ↓
@@ -37,9 +37,9 @@ Randomized Song List Recommendation + Music Organization
 ```text
 | Vibe      | Precision | Recall | F1-score | Support |
 | --------- | --------- | ------ | -------- | ------- |
-| Relaxing  | 0.84      | 0.92   | 0.88     | 959     |
+| Chill     | 0.84      | 0.92   | 0.88     | 959     |
 | Chaotic   | 0.83      | 0.79   | 0.81     | 640     |
-| Chill     | 0.82      | 0.79   | 0.80     | 936     |
+| Road Trip | 0.82      | 0.79   | 0.80     | 936     |
 | Energetic | 0.77      | 0.73   | 0.75     | 959     |
 | Acoustic  | 0.77      | 0.81   | 0.79     | 600     |
 ```
@@ -59,9 +59,9 @@ Randomized Song List Recommendation + Music Organization
 ```text
 | Actual \ Predicted | Relaxing | Chaotic | Chill | Energetic | Acoustic |
 | ------------------ | -------- | ------- | ----- | --------- | -------- |
-| Relaxing           | 885      | 32      | 17    | 6         | 19       |
+| Chill              | 885      | 32      | 17    | 6         | 19       |
 | Chaotic            | 27       | 506     | 25    | 55        | 27       |
-| Chill              | 37       | 12      | 735   | 98        | 54       |
+| Road Trip          | 37       | 12      | 735   | 98        | 54       |
 | Energetic          | 59       | 52      | 107   | 699       | 42       |
 | Acoustic           | 40       | 10      | 17    | 45        | 488      |
 ```
